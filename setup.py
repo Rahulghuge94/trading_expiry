@@ -8,5 +8,5 @@ setuptools.setup(name = "trading_expiry",
       author='Rahul Ghuge',
       packages=['trading_expiry'],
       author_email='1994ghuge.gmail.com',
-      license='MIT',
+      license='GNU GPL 3.0',
       )
