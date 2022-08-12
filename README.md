@@ -1,5 +1,5 @@
 # trading_expiry
-library to fetch nse trading holiday.
+library to fetch nse trading expiry and holiday.
 
 ## installation
 install using pip
