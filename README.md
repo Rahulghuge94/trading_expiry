@@ -1,5 +1,5 @@
 # trading_expiry
-library to fetch nse trading expiry and holiday.
+library to get nse future and option trading expiry and holiday.
 
 ## installation
 install using pip
@@ -11,6 +11,7 @@ pip install git+https://github.com/Rahulghuge94/trading_expiry.py
 this library downloads holiday from nse india website. you may find error while
 using this file on aws or colab. In that case create holiday_{year}.json from
 https://www.nseindia.com/api/holiday-master?type=trading .
+year is current year.
 ```
 import trading_expiry
 print(trading_expiry.week_expiry,
