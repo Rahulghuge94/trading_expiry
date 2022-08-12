@@ -1,12 +1,24 @@
-from setuptools import setup
+import setuptools
 
-setup(
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+    
+setuptools.setup(
     name = "trading_expiry",
     version = "0.1",
-    author = "Rahul Ghuge",
-    author_email = "andrewjcarter@gmail.com",
-    description = ("Library to get traing expiries."),
-    keywords = "NSE-FO expiries",
-    url = "http://packages.python.org/an_example_pypi_project",
-    long_description="library to get trading expiry",
-)
+    packages=setuptools.find_packages(),
+    version = '0.2',
+    include_package_data=True,
+    description = 'finvasia unofficial Trading api',
+    long_description=long_description,
+    long_description_content_type="text/markdown",  author = 'Rahul',
+    author_email = '1994ghuge.gmail.com',
+    url = 'https://github.com/Rahulghuge94/finshoonya',
+    install_requires=['requests', 'pandas','pytz','websocket-client'],
+    keywords = ['NSE', 'OPTION', 'FUTURE' 'python', 'sdk', 'trading', 'stock markets'],
+    classifiers=[
+      'Intended Audience :: Developers',
+      'Natural Language :: English',
+      'Operating System :: OS Independent',
+      'Programming Language :: Python',
+      'Programming Language :: Python :: 3.6'])
