@@ -10,7 +10,6 @@ setuptools.setup(
     long_description_content_type="text/markdown",  author = 'Rahul',
     author_email = '1994ghuge.gmail.com',
     url = 'https://github.com/Rahulghuge94/trading_expiry',
-    install_requires=['requests', 'datetime','json'],
     keywords = ['NSE', 'OPTION', 'FUTURE' 'python', 'sdk', 'trading', 'stock markets'],
     classifiers=[
       'Intended Audience :: Developers',
