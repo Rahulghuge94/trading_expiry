@@ -67,6 +67,7 @@ def get_expiries():
         if expiries[i].month != datetime.datetime.now().date().month and expiries[i-1].month == datetime.datetime.now().date().month:
            month_expiry = expiries[i-1]
            break
+    return expiries
 
 holiday = get_trading_holiday()
 expiries = get_expiries()
